@@ -69,16 +69,32 @@ const Navbar = () => {
           `}
           aria-hidden={!isOpen}
         >
-          <a href="#home" className="block py-2 text-white hover:text-orange-400 transition">
+          <a
+            href="#home"
+            onClick={() => setIsOpen(false)}
+            className="block py-2 text-white hover:text-orange-400 transition"
+          >
             Home
           </a>
-          <a href="#about" className="block py-2 text-white hover:text-orange-400 transition">
+          <a
+            href="#about"
+            onClick={() => setIsOpen(false)}
+            className="block py-2 text-white hover:text-orange-400 transition"
+          >
             About
           </a>
-          <a href="#services" className="block py-2 text-white hover:text-orange-400 transition">
+          <a
+            href="#services"
+            onClick={() => setIsOpen(false)}
+            className="block py-2 text-white hover:text-orange-400 transition"
+          >
             Services
           </a>
-          <a href="#contact" className="block py-2 text-white hover:text-orange-400 transition">
+          <a
+            href="#contact"
+            onClick={() => setIsOpen(false)}
+            className="block py-2 text-white hover:text-orange-400 transition"
+          >
             Contact
           </a>
           <div className="flex flex-col items-center space-y-3 mt-4">
@@ -96,4 +112,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
